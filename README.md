@@ -21,7 +21,9 @@ iOS library for twitter integration v1.1 API
                 } else {
                     dispatch_async(dispatch_get_main_queue(), ^{
                         [busyIndicator removeFromSuperview];
-                        self.userData.text = [userProfile description];
+                        
+                        //dump user data 
+                        NSLog(@"%@",[userProfile description]);
                     });
                 }
             }];
