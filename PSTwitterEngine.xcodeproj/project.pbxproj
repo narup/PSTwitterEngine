@@ -23,9 +23,9 @@
 		19610D9219706412003644E0 /* PSTwitterEngineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 19610D9119706412003644E0 /* PSTwitterEngineTests.m */; };
 		19610DA519706472003644E0 /* PSTwitterEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 19610D9F19706472003644E0 /* PSTwitterEngine.m */; };
 		19610DA619706472003644E0 /* TWSignedRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 19610DA119706472003644E0 /* TWSignedRequest.m */; };
-		19610DAF197064ED003644E0 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 19610DAA197064ED003644E0 /* NSData+Base64.m */; };
-		19610DB0197064ED003644E0 /* OAuth+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 19610DAC197064ED003644E0 /* OAuth+Additions.m */; };
-		19610DB1197064ED003644E0 /* OAuthCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 19610DAE197064ED003644E0 /* OAuthCore.m */; };
+		19AEFE4A1970816100CF859B /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 19AEFE451970816100CF859B /* NSData+Base64.m */; };
+		19AEFE4B1970816100CF859B /* OAuth+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 19AEFE471970816100CF859B /* OAuth+Additions.m */; };
+		19AEFE4C1970816100CF859B /* OAuthCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 19AEFE491970816100CF859B /* OAuthCore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,12 +62,12 @@
 		19610D9F19706472003644E0 /* PSTwitterEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSTwitterEngine.m; sourceTree = "<group>"; };
 		19610DA019706472003644E0 /* TWSignedRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSignedRequest.h; sourceTree = "<group>"; };
 		19610DA119706472003644E0 /* TWSignedRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSignedRequest.m; sourceTree = "<group>"; };
-		19610DA9197064ED003644E0 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
-		19610DAA197064ED003644E0 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
-		19610DAB197064ED003644E0 /* OAuth+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OAuth+Additions.h"; sourceTree = "<group>"; };
-		19610DAC197064ED003644E0 /* OAuth+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OAuth+Additions.m"; sourceTree = "<group>"; };
-		19610DAD197064ED003644E0 /* OAuthCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuthCore.h; sourceTree = "<group>"; };
-		19610DAE197064ED003644E0 /* OAuthCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAuthCore.m; sourceTree = "<group>"; };
+		19AEFE441970816100CF859B /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		19AEFE451970816100CF859B /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		19AEFE461970816100CF859B /* OAuth+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OAuth+Additions.h"; sourceTree = "<group>"; };
+		19AEFE471970816100CF859B /* OAuth+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OAuth+Additions.m"; sourceTree = "<group>"; };
+		19AEFE481970816100CF859B /* OAuthCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuthCore.h; sourceTree = "<group>"; };
+		19AEFE491970816100CF859B /* OAuthCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAuthCore.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,7 +171,7 @@
 		19610D9B19706472003644E0 /* Twitter */ = {
 			isa = PBXGroup;
 			children = (
-				19610DA8197064ED003644E0 /* OAuthCore */,
+				19AEFE431970816100CF859B /* OAuthCore */,
 				19610D9E19706472003644E0 /* PSTwitterEngine.h */,
 				19610D9F19706472003644E0 /* PSTwitterEngine.m */,
 				19610DA019706472003644E0 /* TWSignedRequest.h */,
@@ -180,19 +180,18 @@
 			path = Twitter;
 			sourceTree = "<group>";
 		};
-		19610DA8197064ED003644E0 /* OAuthCore */ = {
+		19AEFE431970816100CF859B /* OAuthCore */ = {
 			isa = PBXGroup;
 			children = (
-				19610DA9197064ED003644E0 /* NSData+Base64.h */,
-				19610DAA197064ED003644E0 /* NSData+Base64.m */,
-				19610DAB197064ED003644E0 /* OAuth+Additions.h */,
-				19610DAC197064ED003644E0 /* OAuth+Additions.m */,
-				19610DAD197064ED003644E0 /* OAuthCore.h */,
-				19610DAE197064ED003644E0 /* OAuthCore.m */,
+				19AEFE441970816100CF859B /* NSData+Base64.h */,
+				19AEFE451970816100CF859B /* NSData+Base64.m */,
+				19AEFE461970816100CF859B /* OAuth+Additions.h */,
+				19AEFE471970816100CF859B /* OAuth+Additions.m */,
+				19AEFE481970816100CF859B /* OAuthCore.h */,
+				19AEFE491970816100CF859B /* OAuthCore.m */,
 			);
-			name = OAuthCore;
-			path = PSTwitterEngine/OAuthCore;
-			sourceTree = SOURCE_ROOT;
+			path = OAuthCore;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -291,14 +290,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19610DB1197064ED003644E0 /* OAuthCore.m in Sources */,
-				19610DB0197064ED003644E0 /* OAuth+Additions.m in Sources */,
+				19AEFE4C1970816100CF859B /* OAuthCore.m in Sources */,
+				19AEFE4B1970816100CF859B /* OAuth+Additions.m in Sources */,
 				19610DA619706472003644E0 /* TWSignedRequest.m in Sources */,
 				19610D7D19706412003644E0 /* ViewController.m in Sources */,
 				19610D7719706412003644E0 /* AppDelegate.m in Sources */,
 				19610D7319706412003644E0 /* main.m in Sources */,
 				19610DA519706472003644E0 /* PSTwitterEngine.m in Sources */,
-				19610DAF197064ED003644E0 /* NSData+Base64.m in Sources */,
+				19AEFE4A1970816100CF859B /* NSData+Base64.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

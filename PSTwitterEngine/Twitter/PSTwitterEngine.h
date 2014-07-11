@@ -12,11 +12,12 @@
 + (NSString *)consumerSecret;
 + (PSTwitterEngine *)sharedEngine;
 
-- (void)logout;
-- (BOOL)isLoggedIn;
 - (NSString *)oAuthToken;
 - (NSString *)oAuthSecret;
 
+
+- (void)logout;
+- (BOOL)isLoggedIn;
 - (void)twitterLogin:(void (^)(NSString *userID, NSString *userName, NSError *error))completionHandler;
 - (void)profileDataForUser:userName completionHandler:(void (^)(NSDictionary *userProfile, NSError *error))completionHandler;
 - (void)friendsForUser:userName
