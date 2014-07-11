@@ -4,7 +4,7 @@ PSTwitterEngine
 iOS library for twitter integration v1.1 API
 ## Steps to use
 * Create twitter application on developer.twitter.com
-* Copy API_KEY & API_SECRET and paste it on Info.plist file
+* Copy API_KEY & API_SECRET and paste it on your application's Info.plist file with keys TWITTER_CONSUMER_KEY & TWITTER_CONSUMER_SECRET
 * Make sure you enable 'Login with twitter' on app settings page
 * Use the following code to login and get user profile data.
 * Please follow sample code for more details
