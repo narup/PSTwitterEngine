@@ -4,7 +4,7 @@ PSTwitterEngine
 iOS library for twitter integration v1.1 API
 
 
-<code>
+```
 - (IBAction)loginAction:(id)sender {
     UIActivityIndicatorView *busyIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
     [self.view addSubview:busyIndicator];
@@ -28,4 +28,4 @@ iOS library for twitter integration v1.1 API
         }
     }];
 }
-</code>
+```
