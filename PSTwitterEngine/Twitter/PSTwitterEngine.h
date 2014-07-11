@@ -17,7 +17,7 @@
 - (NSString *)oAuthToken;
 - (NSString *)oAuthSecret;
 
-- (void)handleTwitterLogin:(void (^)(NSString *userID, NSString *userName, NSError *error))completionHandler;
+- (void)twitterLogin:(void (^)(NSString *userID, NSString *userName, NSError *error))completionHandler;
 - (void)profileDataForUser:userName completionHandler:(void (^)(NSDictionary *userProfile, NSError *error))completionHandler;
 - (void)friendsForUser:userName
      completionHandler:(void (^)(NSArray *friends, NSError *error))completionHandler;

@@ -16,7 +16,7 @@ NSString *const kTW_CONSUMER_SECRET                           = @"TWITTER_CONSUM
 
 NSString *const kAPI_BASE_URL                                 = @"https://api.twitter.com";
 
-NSString *const kPATH_OAUTH_CALLBACK                          = @"intomovies://twitter";
+NSString *const kPATH_OAUTH_CALLBACK                          = @"pstwitterengine://twitter";
 NSString *const kPATH_REQUEST_TOKEN                           = @"/oauth/request_token";
 NSString *const kPATH_ACCESS_TOKEN                            = @"/oauth/access_token";
 NSString *const kPATH_APP_AUTHENTICATE                        = @"/oauth/authenticate";
@@ -90,7 +90,7 @@ typedef void(^TwitterAuthComplete)(NSString *userID, NSString *userName, NSError
     return (_authToken != nil && _authTokenSecret != nil && _screenName != nil);
 }
 
-- (void)handleTwitterLogin:(void (^)(NSString *userID, NSString *userName, NSError *error))completionHandler {
+- (void)twitterLogin:(void (^)(NSString *userID, NSString *userName, NSError *error))completionHandler {
     self.twitterAuthComplete = [completionHandler copy];
     [self requestToken:^(NSString *requestToken, NSError *error) {
         if (error || !requestToken) {

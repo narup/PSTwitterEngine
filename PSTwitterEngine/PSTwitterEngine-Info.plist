@@ -27,7 +27,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>intomovies</string>
+				<string>pstwitterengine</string>
 			</array>
 		</dict>
 	</array>
@@ -36,9 +36,9 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>TWITTER_CONSUMER_KEY</key>
-	<string></string>
+	<string>itSwSXng5E7hYjv7t6eQB5DgB</string>
 	<key>TWITTER_CONSUMER_SECRET</key>
-	<string></string>
+	<string>qvl8IsN5bw21trgr6wz2FUhD4ntd4nIAvSKE0p3aQZWCUDsho1</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>

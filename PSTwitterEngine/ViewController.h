@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+- (IBAction)loginAction:(id)sender;
+@property (weak, nonatomic) IBOutlet UITextView *userData;
 
 @end

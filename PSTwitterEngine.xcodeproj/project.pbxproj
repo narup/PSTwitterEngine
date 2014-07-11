@@ -503,6 +503,7 @@
 				19610D9719706412003644E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		19610D9819706412003644E0 /* Build configuration list for PBXNativeTarget "PSTwitterEngineTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +512,7 @@
 				19610D9A19706412003644E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
