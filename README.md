@@ -2,15 +2,15 @@ PSTwitterEngine
 ===============
 
 iOS library for twitter integration v1.1 API
-
+## Create an application on developer.twitter.com
+* Copy API_KEY & API_SECRET and paste it on Info.plist file
+* Make sure you enable 'Login with twitter' on app settings page
+* Use the following code to login and get user profile data.
+* Please follow sample code for more details
 
 ```
 - (IBAction)loginAction:(id)sender {
-    UIActivityIndicatorView *busyIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
-    [self.view addSubview:busyIndicator];
-    busyIndicator.center = self.view.center;
     
-    [busyIndicator startAnimating];
     [[PSTwitterEngine sharedEngine] twitterLogin:^(NSString *userID, NSString *userName, NSError *error) {
         if (error) {
             [self showError:error];
