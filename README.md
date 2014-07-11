@@ -31,7 +31,18 @@ iOS library for twitter integration v1.1 API
 }
 ```
 
-# Operations supported
+## Make sure you override this method in your AppDelegate.m
+```
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation {
+    NSLog(@"Handle Application URL:%@", url.absoluteString);
+    return [[PSTwitterEngine sharedEngine] handleOpenURL:url];
+}
+```
+
+# Other operations supported
 ```
 - (void)logout;
 - (BOOL)isLoggedIn;
